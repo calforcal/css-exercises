@@ -4,6 +4,56 @@ html, body {
   height: 100%;
 }
 
+.modal {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.modal .icon {
+  display: flex;
+  flex: auto;
+  min-width: 42px;
+  margin: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.are-you-sure {
+  display: flex;
+  flex-direction: row;
+}
+
+.are-you-sure .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: large;
+}
+
+.row .text {
+  display: flex;
+  flex: auto;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 5px 10px 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -46,6 +96,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
 }
 
 button {
