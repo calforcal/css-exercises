@@ -5,13 +5,17 @@ you'll learn about it later. */
 body {
   margin: 0;
   background: #eee;
-  font-family: Besley, serif;
+  font-family: Besley, serif;  
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
 }
 
 .profile-image {
@@ -19,14 +23,24 @@ body {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
-  height: 48px;
+  height: 48px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 16px 0px 0px;
 }
 
-.logo {
+.header .logo {
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: -12px;
 }
 
 button {
@@ -34,7 +48,13 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  padding: 4px 12px;
+  display: flex;
+  flex: 0;
+  min-width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 16px 16px 0px;
 }
 
 a {
@@ -45,4 +65,13 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
 }
